@@ -1,0 +1,13 @@
+body {
+  color: #ff2778;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  color: rgb(89, 62, 190);
+}
