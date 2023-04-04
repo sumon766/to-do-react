@@ -18,18 +18,14 @@ const Todo = () => {
       <TodoItems />
     </div>
   );
-}
-
-const Input = ({ type, name, handleChange }) => {
-  return (
-      <input type={type} name={name} onChange={handleChange} />
-  );
-}
-
-const Button = ({ type, name }) => {
-  return (
-    <button type={type} key={name}>{name}</button>
-  );
-}
+};
+/* eslint-disable react/prop-types */
+const Input = ({ type, name, handleChange }) => (
+  <input type={type} name={name} onChange={handleChange} />
+);
+/* eslint-disable react/prop-types */
+const Button = ({ name }) => (
+  <button type="button" key={name}>{name}</button>
+);
 
 export default Todo;

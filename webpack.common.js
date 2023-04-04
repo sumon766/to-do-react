@@ -1,12 +1,12 @@
 const path = require('path');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HTMLWebpackPlugin = require('html-webpack-plugin');// eslint-disable-line import/no-extraneous-dependencies
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');// eslint-disable-line import/no-extraneous-dependencies
 
 module.exports = {
   entry: './src/index.js',
   output: {
     path: path.join(__dirname, 'dist'),
-    assetModuleFilename: 'images/\[name\][ext][query]',
+    assetModuleFilename: 'images/name[ext][query]',
     filename: 'bundle.js',
     clean: true,
   },
@@ -16,7 +16,7 @@ module.exports = {
     }),
 
     new MiniCssExtractPlugin({
-        filename: 'styles.css',
+      filename: 'styles.css',
     }),
   ],
   module: {

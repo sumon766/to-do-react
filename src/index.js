@@ -9,8 +9,8 @@ const rootElement = document.getElementById('root');
 const root = ReactDOM.createRoot(rootElement);
 
 root.render(
-    <div className="todo-container">
-        <Header />
-        <Todo />
-    </div>
+  <div className="todo-container">
+    <Header />
+    <Todo />
+  </div>,
 );
